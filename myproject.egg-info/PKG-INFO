@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: myproject
+Version: 0.3
+Summary: EDSA project
+Home-page: git@github.com:SisoFano/myproject.git
+Author: <SisoFano>
+Author-email: <sisofano@gmail.com>
+License: MIT
+Description: # myproject
+        This library has sorting functions and recursive functions.
+        
+        ## building this package locally
+        `python setup.py sdist`
+        
+        ## installing this package from github
+        `pip install git+https://github.com/SisoFano/EXPLORE.git`
+        
+Platform: UNKNOWN
