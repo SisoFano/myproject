@@ -12,32 +12,35 @@ def bubble_sort(items):
 def merge_sort(items):
 
     '''Return array of items, sorted in ascending order'''
-    if len(items)>1:
-        mid = len(nlist)//2
-        lefthalf = items[:mid]
-        righthalf = items[mid:]
+    if len(items) >1:
+        mid = len(items)//2
+        left = items[:mid]
+        right = items[mid:]
 
-        merge_sort(lefthalf)
-        merge_sort(righthalf)
-        i=j=k=0
-        while i < len(lefthalf) and j < len(righthalf):
-            if lefthalf[i] < righthalf[j]:
-                nlist[k]=lefthalf[i]
-                i=i+1
+        merge_sort(left)
+        merge_sort(right)
+
+        i = j = k = 0
+
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                items[k] = left[i]
+                i+=1
             else:
-                nlist[k]=righthalf[j]
-                j=j+1
-            k=k+1
+                items[k] = right[j]
+                j+=1
+            k+=1
 
-        while i < len(lefthalf):
-            items[k]=lefthalf[i]
-            i=i+1
-            k=k+1
+        while i < len(left):
+            items[k] = left[i]
+            i+=1
+            k+=1
 
-        while j < len(righthalf):
-            items[k]=righthalf[j]
-            j=j+1
-            k=k+1
+        while j < len(right):
+            items[k] = right[j]
+            j+=1
+            k+=1
+
     return items
 
 def quick_sort(items):

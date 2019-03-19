@@ -7,9 +7,10 @@ def sum_array(array):
         return array[0] + sum_array(array[1:])
 
 def fibonacci(n):
-
     '''Return nth term in fibonacci sequence'''
-    if n < 2:
+    if n == 0:
+        return 0
+    elif n == 1:
         return 1
     else:
         return fibonacci(n-1) + fibonacci(n-2)
@@ -23,7 +24,7 @@ def factorial(n):
         return n * factorial(n-1)
 
 def reverse(word):
-    cd
+
     '''Return word in reverse'''
     if word == '':
         return word
