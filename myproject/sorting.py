@@ -1,6 +1,6 @@
 def bubble_sort(items):
 
-    '''Return array of items, sorted in ascending order'''
+    """Return array of items, sorted in ascending order using bubble sort"""
     for num in range(len(items)-1,0,-1):
         for j in range(num):
             if items[j]>items[j+1]:
@@ -11,7 +11,7 @@ def bubble_sort(items):
 
 def merge_sort(items):
 
-    '''Return array of items, sorted in ascending order'''
+    """Return array of items, sorted in ascending order using merge sort"""
     if len(items) >1:
         mid = len(items)//2
         left = items[:mid]
@@ -45,7 +45,7 @@ def merge_sort(items):
 
 def quick_sort(items):
 
-    '''Return array of items, sorted in ascending order'''
+    """Return array of items, sorted in ascending order quick sort"""
     if not items:
         return []
 
